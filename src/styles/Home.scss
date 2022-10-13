@@ -1,0 +1,160 @@
+.HomeMainContainer {
+    background: #1d2123;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    padding: 4rem 0.6rem;
+    .HomeContainer {
+        display: flex;
+        align-items: center;
+        .rightContainer {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 3fr 1.5fr;
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+            }
+            gap: 1rem;
+            .rightContent1 {
+                background: #609eaf;
+                border-radius: 40px;
+                padding: 0.3rem;
+                .rightContents {
+                    background: url('../../public/imgs/index1.png') no-repeat center center/cover;
+                    background-position: 3rem;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-evenly;
+                    @media (min-width: 1280px) {
+                        background: url('../../src/images/Data/Vector\ \(1\).svg') no-repeat center center/cover;
+                    }
+
+                    .Lgimg {
+                        margin-right: 8rem;
+                        margin-top: 4rem;
+                        @media (max-width: 1280px) {
+                            margin-right: -1.5rem;
+                        }
+                        @media (max-width: 1044px) {
+                            display: none;
+                        }
+                    }
+                    .contentdiv {
+                        flex: 1;
+                        padding: 0rem 2rem;
+                        .playlist {
+                            font-weight: 400;
+                            font-size: 0.9rem;
+                            margin-bottom: 5.3rem;
+                            margin-top: 2.4rem;
+                        }
+                        .RandB {
+                            h4 {
+                                font-weight: 700;
+                                font-size: 2.2rem;
+                                @media (max-width: 1280px) {
+                                    font-size: 1.8rem;
+                                }
+                                @media (min-width: 1500px) {
+                                    font-size: 3.2rem;
+                                }
+                            }
+                            p {
+                                margin-top: -0.5rem;
+                                font-weight: 400;
+                                font-size: 0.875rem;
+                                line-height: 1.3rem;
+                                width: 75%;
+                                @media (max-width: 1280px) {
+                                    width: 100%;
+                                }
+                                @media (min-width: 1500px) {
+                                    font-size: 0.9rem;
+                                }
+                            }
+
+                            .likediv {
+                                display: flex;
+                                align-items: center;
+                                margin-top: 5.8rem;
+                                padding: 0.5rem;
+
+                                .loveComp {
+                                    margin-left: 0.5rem;
+                                    display: flex;
+                                    align-items: center;
+                                }
+                                .love {
+                                    font-size: 1rem;
+                                    margin-right: 0.5rem;
+                                }
+                                .love1 {
+                                    font-weight: 400;
+                                    font-size: 0.97rem;
+                                    line-height: 120%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .rightContent2 {
+                .scroll {
+                    display: flex;
+                    flex-direction: column;
+                    @media (max-width: 768px) {
+                        display: none;
+                    }
+                    .chartContainer {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        background: #1a1e1f;
+                        border-radius: 20px;
+                        padding: 0.6rem;
+                        margin-top: 1rem;
+                        @media (max-width: 768px) {
+                            align-items: flex-start;
+                            justify-content: space-between;
+                            padding: 1.5rem;
+                            width: 350px;
+                        }
+                        .heart {
+                            border: 1px solid rgba(255, 255, 255, 0.11);
+                            border-radius: 50%;
+                            padding: 0.4rem;
+                        }
+                        .chartContent {
+                            display: flex;
+                            align-items: center;
+                            gap: 0.7rem;
+                            @media (max-width: 768px) {
+                                flex-direction: column;
+                                align-items: flex-start;
+                            }
+                            .chartTexts {
+                                h6 {
+                                    font-weight: 400;
+                                    font-size: 17px;
+                                    color: #ffffff;
+                                    margin-top: 0.2rem;
+                                }
+                                p {
+                                    font-weight: 400;
+                                    font-size: 0.75rem;
+                                    color: #ffffff80;
+                                }
+                                .time {
+                                    font-weight: 400;
+                                    font-size: 0.75rem;
+                                    margin-top: 0.1rem;
+                                    color: #ffffff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
