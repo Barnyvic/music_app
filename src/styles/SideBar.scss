@@ -1,6 +1,5 @@
-.sideBarContainer {
+.SidebarContainer {
     display: none;
-
     @media (min-width: 768px) {
         display: block;
         position: relative;
@@ -17,6 +16,7 @@
             gap: 1.4rem;
             padding: 0.8rem 0.9rem;
             background: #1d2123;
+            background: red;
             color: #efeee040;
             border-radius: 20px;
             .sidebarmenu {

@@ -1,7 +1,6 @@
 nav {
     z-index: 3;
     position: fixed;
-    //   background: #1d2123;
     width: 100%;
     padding: 0.5rem;
     left: 0;
@@ -53,6 +52,28 @@ nav {
                         color: #ffffff40;
                     }
                 }
+            }
+        }
+        .smallScreenMenu {
+            background: red;
+            width: 80%;
+            height: 100vh;
+            left: -1%;
+            top: 100%;
+            animation: myAnim 2s ease 0s 1 normal forwards;
+            @keyframes myAnim {
+                0% {
+                    opacity: 0;
+                    transform: translateX(-250px);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+            @media (min-width: 768px) {
+                display: none;
             }
         }
     }

@@ -15,7 +15,7 @@ function TopPlayersmComp() {
                                 <img src={items.img} alt="" />
                                 <div>
                                     <h6 className="text-lg">{items.header}</h6>
-                                    <p className="color text-[#ffffff80]">{items.subheader}</p>
+                                    <p className="color text-base text-[#ffffff80]">{items.subheader}</p>
                                     <p className="text-sm">{items.time}</p>
                                 </div>
                             </div>
@@ -63,6 +63,7 @@ const settings = {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    arrows: false,
     initialSlide: 0,
     autoplay: true,
     autoplaySpeed: 2000,
