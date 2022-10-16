@@ -16,7 +16,6 @@
             gap: 1.4rem;
             padding: 0.8rem 0.9rem;
             background: #1d2123;
-            background: red;
             color: #efeee040;
             border-radius: 20px;
             .sidebarmenu {
@@ -26,9 +25,13 @@
                 width: 100%;
             }
         }
+        .aside1 {
+            @media (max-width: 912px) {
+                top: 9%;
+            }
+        }
         .aside2 {
-            position: fixed;
-            top: 40%;
+            top: 320px;
             left: 1.7%;
         }
     }

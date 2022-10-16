@@ -8,7 +8,7 @@ import { BsFillSuitHeartFill } from 'react-icons/bs';
 import NavComp from './NavComp';
 import SidebarComp from './SidebarComp';
 import TopPlayersmComp from './TopPlayersmComp';
-
+import SliderComp from './SliderComp';
 const HomeComp = () => {
     return (
         <div className="HomeMainContainer">
@@ -40,7 +40,7 @@ const HomeComp = () => {
                         </div>
                     </div>
                     <div className="rightContent2">
-                        <h4 className="text-3xl ">Top charts</h4>
+                        <h4 className="text-2xl  center ">Top charts</h4>
                         <div className="scroll">
                             {topChartItems.map((items) => (
                                 <div className="chartContainer" key={items.id}>
@@ -60,6 +60,7 @@ const HomeComp = () => {
                 </div>
             </div>
             <TopPlayersmComp />
+            <SliderComp />
         </div>
     );
 };

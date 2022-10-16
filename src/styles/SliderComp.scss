@@ -1,0 +1,12 @@
+.SliderContainer {
+    max-width: 1300px;
+    margin-left: 6rem;
+    @media (max-width: 768px) {
+        margin-left: 0.5rem;
+    }
+    // margin: 0 auto;
+    .SliderContents {
+        padding: 0.5rem;
+        width: 400px;
+    }
+}

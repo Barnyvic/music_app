@@ -55,10 +55,11 @@ nav {
             }
         }
         .smallScreenMenu {
-            background: red;
+            background: #1d2123;
             width: 80%;
             height: 100vh;
-            left: -1%;
+            color: rgba(239, 238, 224, 0.25);
+            left: -4%;
             top: 100%;
             animation: myAnim 2s ease 0s 1 normal forwards;
             @keyframes myAnim {

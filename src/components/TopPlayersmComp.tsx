@@ -6,7 +6,7 @@ import Slider from 'react-slick';
 
 function TopPlayersmComp() {
     return (
-        <div className="TopplayerSlider px-5 py-5">
+        <div className="TopplayerSlider py-5">
             <Slider {...settings}>
                 {topChartItems.map((items) => (
                     <div className=" topPlayerContainer p-4 rounded-3xl" key={items.id}>
