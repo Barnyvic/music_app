@@ -1,14 +1,18 @@
 import { RiRadio2Fill } from 'react-icons/ri';
 import { BsFillFilePersonFill } from 'react-icons/bs';
 import { AiFillHome } from 'react-icons/ai';
+import { NavLink } from 'react-router-dom';
 
 function SidebarComp() {
     return (
         <div className="SidebarContainer">
             <div className="aside1 ">
-                <AiFillHome className="sidebarmenu" />
-
-                <RiRadio2Fill className="sidebarmenu" />
+                <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'link')}>
+                    <AiFillHome className="sidebarmenu" />
+                </NavLink>
+                <NavLink to="/viewchart">
+                    <RiRadio2Fill className="sidebarmenu" />
+                </NavLink>
 
                 <RiRadio2Fill className="sidebarmenu" />
 
