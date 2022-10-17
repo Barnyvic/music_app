@@ -10,6 +10,39 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+.btn-heart {
+    font-size: 1.5rem;
+    color: #5f6973;
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+.albumName {
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+.tomorrowFont {
+    @media (max-width: 290px) {
+        font-size: 1.7rem;
+    }
+}
+.albumContent {
+    @media (max-width: 768px) {
+        text-align: start;
+    }
+    @media (max-width: 450px) {
+        font-size: 0.7rem;
+        margin-left: -1rem;
+    }
+}
+.albumTime {
+    @media (max-width: 768px) {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+}
+
 @import './styles/Home.scss';
 @import './styles/Navbar.scss';
 @import './styles/SideBar.scss';
@@ -17,3 +50,4 @@
 @import './styles/Topplayer.scss';
 @import './styles/SliderComp.scss';
 @import './styles/footer.scss';
+@import './styles/ViewChart.scss';
