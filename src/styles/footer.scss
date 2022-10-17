@@ -1,11 +1,62 @@
 .footer {
     background: rgba(51, 55, 59, 0.37);
     backdrop-filter: blur(5px);
+    color: #ffffff;
     border-radius: 15px;
     height: 100vh;
     top: 85%;
     .footerContainer {
-        // width: 100%;
-        // max-width: 1200px;
+        .FooterImg {
+            img {
+                width: 20%;
+                border-radius: 10px;
+                @media (max-width: 768px) {
+                    width: 30%;
+                }
+            }
+            p {
+                @media (max-width: 768px) {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+        .FooterControlers {
+            width: 50%;
+            .ControllersDiv {
+                @media (max-width: 768px) {
+                    gap: 1rem;
+                }
+                .Control {
+                    font-size: 2.5rem;
+                    color: #ffa500;
+                    @media (max-width: 768px) {
+                        font-size: 1.6rem;
+                    }
+                }
+                .Control1 {
+                    font-size: 1.5rem;
+                    @media (max-width: 768px) {
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .MusicRange {
+                width: 100%;
+                input[type='range'] {
+                    width: 100%;
+                    // -webkit-appearance: none;
+                    &:focus {
+                        outline: #ffa500;
+                    }
+                }
+            }
+        }
+        .FooterVolume {
+            .Volume {
+                @media (max-width: 768px) {
+                    width: 70%;
+                }
+            }
+        }
     }
 }
