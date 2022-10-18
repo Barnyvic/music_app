@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Footer from './components/Footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ViewChart from './Pages/ViewChart';
+import RadioComp from './Pages/RadioComp';
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<HomeComp />} />
                     <Route path="/viewchart" element={<ViewChart />} />
+                    <Route path="/radio" element={<RadioComp />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>

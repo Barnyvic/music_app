@@ -43,6 +43,13 @@
     }
 }
 
+.link {
+    color: #efeee040;
+}
+.active {
+    color: #facd66;
+}
+
 @import './styles/Home.scss';
 @import './styles/Navbar.scss';
 @import './styles/SideBar.scss';
@@ -51,3 +58,4 @@
 @import './styles/SliderComp.scss';
 @import './styles/footer.scss';
 @import './styles/ViewChart.scss';
+@import './styles/Radio.scss';

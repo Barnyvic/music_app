@@ -4,10 +4,14 @@ import { HiOutlineMenuAlt4 } from 'react-icons/hi';
 import { IoMdClose } from 'react-icons/io';
 import { useState } from 'react';
 import { AiFillHome } from 'react-icons/ai';
+import { NavLink, useLocation } from 'react-router-dom';
 
 function NavComp() {
     const [Open, setOpen] = useState(false);
     const handleClick = () => setOpen(!Open);
+    const { pathname } = useLocation();
+    //destructuring pathname from location
+
     return (
         <>
             <nav>
@@ -25,10 +29,12 @@ function NavComp() {
                             {SmallNavItems.map((items) => (
                                 <div key={items.id}>
                                     <div className="flex flex-col mb-9">
-                                        <div className="flex items-center gap-4 hover:bg-blue-500 hover:rounded-r-lg p-2">
-                                            <p>{items.Icon}</p>
-                                            <p className="font-bold text-base">{items.text}</p>
-                                        </div>
+                                        <NavLink to={`${items.path}`} className={pathname?.includes(`${items.path}`) ? 'active' : 'link'}>
+                                            <div className="flex items-center gap-4 hover:bg-blue-500 hover:rounded-r-lg p-2">
+                                                <p>{items.Icon}</p>
+                                                <p className="font-bold text-base">{items.text}</p>
+                                            </div>
+                                        </NavLink>
                                     </div>
                                 </div>
                             ))}
@@ -46,17 +52,20 @@ const SmallNavItems = [
     {
         id: 1,
         Icon: <AiFillHome style={{ fontSize: '2rem' }} />,
-        text: 'Home'
+        text: 'Home',
+        path: '/'
     },
     {
         id: 2,
         Icon: <AiFillHome style={{ fontSize: '2rem' }} />,
-        text: 'My collections'
+        text: 'My collections',
+        path: '/viewchart'
     },
     {
         id: 3,
         Icon: <AiFillHome style={{ fontSize: '2rem' }} />,
-        text: 'Radio'
+        text: 'Radio',
+        path: '/radio'
     },
     {
         id: 4,

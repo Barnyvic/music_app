@@ -25,8 +25,11 @@ function SidebarComp() {
                     </Link>
                 </button>
 
-                <Link to="/"></Link>
-                <RiRadio2Fill className="sidebarmenu" />
+                <button className={splitLocation[1] === 'radio' ? 'active' : 'link'}>
+                    <Link to="/radio">
+                        <RiRadio2Fill className="sidebarmenu" />
+                    </Link>
+                </button>
 
                 <AiFillHome className="sidebarmenu" />
             </div>
