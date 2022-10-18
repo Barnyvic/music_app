@@ -1,7 +1,12 @@
 import logo from '../images/Data/Logo4.png';
 import { BsSearch } from 'react-icons/bs';
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
+import { FiLogOut } from 'react-icons/fi';
+import { BsCameraVideoFill } from 'react-icons/bs';
+import { RiRadio2Fill } from 'react-icons/ri';
+import { FaMusic } from 'react-icons/fa';
 import { IoMdClose } from 'react-icons/io';
+import { BsFillFilePersonFill } from 'react-icons/bs';
 import { useState } from 'react';
 import { AiFillHome } from 'react-icons/ai';
 import { Link, useLocation } from 'react-router-dom';
@@ -57,31 +62,31 @@ const SmallNavItems = [
     },
     {
         id: 2,
-        Icon: <AiFillHome style={{ fontSize: '2rem' }} />,
+        Icon: <FaMusic style={{ fontSize: '2rem' }} />,
         text: 'My collections',
         path: '/viewchart'
     },
     {
         id: 3,
-        Icon: <AiFillHome style={{ fontSize: '2rem' }} />,
+        Icon: <RiRadio2Fill style={{ fontSize: '2rem' }} />,
         text: 'Radio',
         path: '/radio'
     },
     {
         id: 4,
-        Icon: <AiFillHome style={{ fontSize: '2rem' }} />,
+        Icon: <BsCameraVideoFill style={{ fontSize: '2rem' }} />,
         text: 'Music videos',
         path: '/video'
     },
     {
         id: 5,
-        Icon: <AiFillHome style={{ fontSize: '2rem' }} />,
+        Icon: <BsFillFilePersonFill style={{ fontSize: '2rem' }} />,
         text: 'Profile',
         path: '/profile'
     },
     {
         id: 6,
-        Icon: <AiFillHome style={{ fontSize: '2rem' }} />,
+        Icon: <FiLogOut style={{ fontSize: '2rem' }} />,
         text: 'Log out',
         path: '/logout'
     }

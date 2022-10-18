@@ -1,6 +1,9 @@
 import { RiRadio2Fill } from 'react-icons/ri';
 import { BsFillFilePersonFill } from 'react-icons/bs';
 import { AiFillHome } from 'react-icons/ai';
+import { FiLogOut } from 'react-icons/fi';
+import { BsCameraVideoFill } from 'react-icons/bs';
+import { FaMusic } from 'react-icons/fa';
 import { Link, useLocation } from 'react-router-dom';
 
 function SidebarComp() {
@@ -21,7 +24,7 @@ function SidebarComp() {
                 </button>
                 <button className={splitLocation[1] === 'viewchart' ? 'active' : 'link'}>
                     <Link to="/viewchart">
-                        <RiRadio2Fill className="sidebarmenu" />
+                        <FaMusic className="sidebarmenu" />
                     </Link>
                 </button>
 
@@ -31,11 +34,11 @@ function SidebarComp() {
                     </Link>
                 </button>
 
-                <AiFillHome className="sidebarmenu" />
+                <BsCameraVideoFill className="sidebarmenu" />
             </div>
             <div className="aside2">
                 <BsFillFilePersonFill className="sidebarmenu" />
-                <BsFillFilePersonFill className="sidebarmenu" />
+                <FiLogOut className="sidebarmenu" />
             </div>
         </div>
     );
