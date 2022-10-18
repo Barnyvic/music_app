@@ -4,13 +4,17 @@ import { HiOutlineMenuAlt4 } from 'react-icons/hi';
 import { IoMdClose } from 'react-icons/io';
 import { useState } from 'react';
 import { AiFillHome } from 'react-icons/ai';
-import { NavLink, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function NavComp() {
     const [Open, setOpen] = useState(false);
     const handleClick = () => setOpen(!Open);
-    const { pathname } = useLocation();
+    const location = useLocation();
     //destructuring pathname from location
+    const { pathname } = location;
+
+    //Javascript split method to get the name of the path in array
+    const splitLocation = pathname.split('/');
 
     return (
         <>
@@ -26,18 +30,28 @@ function NavComp() {
                     </div>
                     {Open && (
                         <div className="smallScreenMenu absolute pt-20 pl-4 rounded ...">
-                            {SmallNavItems.map((items) => (
-                                <div key={items.id}>
-                                    <div className="flex flex-col mb-9">
-                                        <NavLink to={`${items.path}`} className={pathname?.includes(`${items.path}`) ? 'active' : 'link'}>
-                                            <div className="flex items-center gap-4 hover:bg-blue-500 hover:rounded-r-lg p-2">
-                                                <p>{items.Icon}</p>
-                                                <p className="font-bold text-base">{items.text}</p>
-                                            </div>
-                                        </NavLink>
-                                    </div>
+                            <div>
+                                <div className="flex flex-col mb-9">
+                                    <Link to="/" className={splitLocation[1] === '' ? 'active' : 'link'}>
+                                        <div className="flex items-center gap-4 hover:bg-blue-500 hover:rounded-r-lg p-2">
+                                            <AiFillHome style={{ fontSize: '2rem' }} />
+                                            <p className="font-bold text-base">Home</p>
+                                        </div>
+                                    </Link>
+                                    <Link to="/viewchart" className={splitLocation[1] === 'viewchart' ? 'active' : 'link'}>
+                                        <div className="flex items-center gap-4 hover:bg-blue-500 hover:rounded-r-lg p-2">
+                                            <AiFillHome style={{ fontSize: '2rem' }} />
+                                            <p className="font-bold text-base">My collections</p>
+                                        </div>
+                                    </Link>
+                                    <Link to="/radio" className={splitLocation[1] === 'radio' ? 'active' : 'link'}>
+                                        <div className="flex items-center gap-4 hover:bg-blue-500 hover:rounded-r-lg p-2">
+                                            <AiFillHome style={{ fontSize: '2rem' }} />
+                                            <p className="font-bold text-base">Radio</p>
+                                        </div>
+                                    </Link>
                                 </div>
-                            ))}
+                            </div>
                         </div>
                     )}
                 </div>
