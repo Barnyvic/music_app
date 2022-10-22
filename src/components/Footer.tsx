@@ -5,7 +5,6 @@ import { AiOutlinePlayCircle } from 'react-icons/ai';
 import { AiOutlineFastForward } from 'react-icons/ai';
 import { TbRepeat } from 'react-icons/tb';
 import { BsFillVolumeUpFill } from 'react-icons/bs';
- import song from  "../assets/Aslam.mp3"
 const Footer = () => {
     return (
         <footer className="bg-blue-600 fixed w-full footer p-2">
