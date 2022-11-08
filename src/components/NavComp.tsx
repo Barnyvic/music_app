@@ -33,7 +33,7 @@ function NavComp() {
                         <div className="smallScreenMenu absolute pt-20 pl-4 rounded ...">
                             <div>
                                 {SmallNavItems.map((items) => (
-                                    <div className="flex flex-col mb-9">
+                                    <div className="flex flex-col mb-9" key={items.id}>
                                         <Link to={items.path} className={pathname === items.path ? 'active' : 'link'}>
                                             <div className="flex items-center gap-4 hover:bg-blue-500 hover:rounded-r-lg p-2">
                                                 <p>{items.Icon}</p>

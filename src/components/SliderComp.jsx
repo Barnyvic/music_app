@@ -6,7 +6,7 @@ import slider4 from '../images/Data/Slider4.png';
 import slider5 from '../images/Data/Slider5.png';
 import slider6 from '../images/Data/Slider6.png';
 
-const SliderComp = () => {
+const SliderComp = ({ data }) => {
     return (
         <section className="p-2 py-5 SliderContainer">
             <Slider {...settings}>

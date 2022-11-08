@@ -12,6 +12,7 @@ const Footer = () => {
             <div className="footerContainer flex items-center pt-2 justify-evenly">
                 <div className="FooterImg pt-2 flex items-center gap-2">
                     <img src={footerImg} alt="footer img" />
+
                     <div className="Fcontents">
                         <p className="font-bold Fheader">Seasons in</p>
                         <p className="text-sm text-[#ffffff70]">lorem</p>

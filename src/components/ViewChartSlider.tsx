@@ -54,27 +54,7 @@ const columns: TableColumn<Datarow>[] = [
 ];
 
 const Viewslide = () => {
-    return (
-        <DataTable columns={columns} data={ViewSlideItems} customStyles={customStyles} />
-        // <section className="mx-4">
-        //     {ViewSlideItems.map((items) => (
-        //         <div className="mb-3" key={items.id}>
-        //             <div className="bg-[#33373b5e] p-2 rounded backdrop-blur-sm flex items-center justify-between">
-        //                 <div className="SongsImgContainer flex gap-4 items-center">
-        //                     <img className="w-10" src={items.img} alt="Songs-imgs" />
-        //                     <button>{items.icon1}</button>
-        //                 </div>
-        //                 <p>{items.text}</p>
-        //                 <div className="text-center bg-red-400">
-        //                     <p>{items.AlbumName}</p>
-        //                 </div>
-        //                 <p className="text-sm">{items.songMin}</p>
-        //                 <button className="text-[#FACD66]">{items.icon2}</button>
-        //             </div>
-        //         </div>
-        //     ))}
-        // </section>
-    );
+    return <DataTable columns={columns} data={ViewSlideItems} customStyles={customStyles} />;
 };
 
 export default Viewslide;

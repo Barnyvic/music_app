@@ -5,10 +5,12 @@ import TopImg2 from '../images/Data/topimg3 (2).png';
 import TopImg3 from '../images/Data/topimg3 (3).png';
 import heart from '../images/Data/Stroke-1.png';
 import { BsFillSuitHeartFill } from 'react-icons/bs';
-import NavComp from './NavComp';
-import SidebarComp from './SidebarComp';
-import TopPlayersmComp from './TopPlayersmComp';
-import SliderComp from './SliderComp';
+import NavComp from '../components/NavComp';
+import SidebarComp from '../components/SidebarComp';
+import TopPlayersmComp from '../components/TopPlayersmComp';
+import SliderComp from '../components/SliderComp';
+import Datafetch from '../components/Datafetch';
+
 const HomeComp = () => {
     return (
         <div className="HomeMainContainer">
@@ -47,7 +49,6 @@ const HomeComp = () => {
                                     <div className="chartContent">
                                         <img src={items.img} alt="A cartoon" />
                                         <div className="chartTexts">
-                                            <h6>{items.header}</h6>
                                             <p>{items.subheader}</p>
                                             <p className="time">{items.time}</p>
                                         </div>
@@ -59,6 +60,7 @@ const HomeComp = () => {
                     </div>
                 </div>
             </div>
+            <Datafetch />
             <TopPlayersmComp />
             <SliderComp />
         </div>
@@ -73,7 +75,8 @@ const topChartItems = [
         header: 'Goldeb age of 80s',
         subheader: 'Sean swadder',
         time: '2:34:45',
-        img2: heart
+        img2: heart,
+        src: './music/on-n-on.mp3'
     },
     {
         id: 2,
@@ -81,7 +84,8 @@ const topChartItems = [
         header: 'Reggae “n” blues',
         subheader: 'Dj YK mule',
         time: '1:02:42',
-        img2: heart
+        img2: heart,
+        src: './music/on-n-on.mp3'
     },
     {
         id: 3,
@@ -89,6 +93,7 @@ const topChartItems = [
         header: 'Tomorrow’s tunes',
         subheader: 'Obi Datti',
         time: '2:01:25',
-        img2: heart
+        img2: heart,
+        src: './music/somebody-new.mp3'
     }
 ];
